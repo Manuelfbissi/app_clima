@@ -1,4 +1,10 @@
 /* https://coolors.co/palette/eaff00-17e300-2eb6ff-b300e5-e100ff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
     background-image: url(../img/tierra.jpeg);
     background-repeat: no-repeat;
@@ -7,6 +13,7 @@ body {
     background-attachment: fixed;
   
  font-family:Arial, Helvetica, sans-serif;
+ overflow-x: hidden;
  }
  h1{
      color: #17e300;
@@ -94,23 +101,16 @@ input:hover{
   margin: auto;
   margin-top:20px ;
  }
-
- .logo-container:hover{
-    width: 18.5%;
- }
-
  
 
  .parrafo{
     background-color:#e100ffac;
     color: rgb(0, 0, 0);
-    max-width: 60%;
-    margin: auto;
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border: solid 1px #eaff00;
     border-radius: 5px;
-    font-size: 90%;
+
 }
 
     
@@ -138,4 +138,40 @@ h2 , h3{
  
  
  
- 
+
+
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 992px) {
+    .parrafo {
+      font-size: 1rem;
+      max-width: 90%;
+ margin: auto;
+    
+      
+    }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .parrafo {
+      font-size: 0.5rem;
+      max-width: 100%;
+      margin-bottom: 3px;
+
+
+    
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    .parrafo {
+      font-size: 0.5rem;
+      max-width: 100%;
+      margin-bottom: 3px;
+
+    
+    }
+  }
+  
