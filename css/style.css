@@ -82,6 +82,11 @@ body {
   margin: auto;
   margin-top:20px ;
  }
+
+ .logo-container:hover{
+    width: 18.5%;
+ }
+
  
 
  .parrafo{
