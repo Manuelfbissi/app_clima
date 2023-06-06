@@ -60,6 +60,7 @@ form.addEventListener("submit", (event) => {
   
       .catch((error) => {
         weatherDiv.textContent = "No se pudo obtener información climática";
+        weatherDiv.style.color = "red";
       });
   });
 
